@@ -4,15 +4,12 @@ export default function Navbar() {
 const path = window.location.pathname
     return (
         <nav className="nav">
-            <Link to="/" className="site-title" >
-                Chris Holtz Portfolio
-                </Link>
+            <img src='/logo192.png'></img>
+            <Link to="/" className="site-title">Chris Holtz Portfolio</Link>
             <ul>
                 <CustomLink to="/projects">Projects</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
                 <CustomLink to="/about">About Me</CustomLink>
-
-
             </ul>
         </nav>
     )

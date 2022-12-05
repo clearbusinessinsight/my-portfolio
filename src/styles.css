@@ -19,6 +19,8 @@ body {
 }
 .site-title {
     font-size: 2rem;
+    color: inherit;
+    margin: 0;
 }
 .nav ul {
     padding: 0;
@@ -42,4 +44,12 @@ body {
     background-color: #777;
 }
 
+main {
+    min-height: 100vh;
+    
+}
+
+footer {
+    color: red;
+}
 
