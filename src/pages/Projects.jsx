@@ -15,25 +15,25 @@ export default function projects() {
             src: codingquiz,
             href: "https://clearbusinessinsight.github.io/coding-quiz/"
         },
+        {
+        id: 5,
+        src: weather,
+        href: " https://clearbusinessinsight.github.io/weatherApp/"
+    },
+    {
+      id: 3,
+      src: jate,
+      href:  "https://my-jate-editor.herokuapp.com/"
+  },
          {
             id: 2,
             src: Password,
             href: " https://clearbusinessinsight.github.io/Passwords/"
         },
-          {
-            id: 3,
-            src: jate,
-            href:  "https://my-jate-editor.herokuapp.com/"
-        },
            {
             id: 4,
             src: teamprofile,
             href:  "https://github.com/clearbusinessinsight/team-profile-generator"
-        },
-            {
-            id: 5,
-            src: weather,
-            href: " https://clearbusinessinsight.github.io/weatherApp/"
         },
              {
             id: 6,
@@ -44,7 +44,7 @@ export default function projects() {
     ]
 
   return (
-        <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen">
+        <div>
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>                  

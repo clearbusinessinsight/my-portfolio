@@ -1,18 +1,18 @@
 import React from "react";
 
-export default function About() {
+export default function Home() {
   return (
     <section id="about">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
 <div
           name="about"
-          className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+          className=" from-gray-800 to-black text-white"
                     >
           <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center wifull h-full">
               <div className="pb-8">
-                  <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
+                  <p className="text-4xl font-bold inline from-gray-800 to-black text-white"></p>
               </div>
-              <p className="text-xl mt-20">
+              <p className="text-xl mt-10">
                   My name is Chris Holtz, I was born and raised in Cincinnati Ohio.  I have been working in the computer indiustry since it's infincy.  My first computer ws a Radio Shack TRS80.  AFter years working on the developemnet of my own own software that we use to run of cabinetry and countertop business I have decided to educate myself in the field of Full Stack Development.
               </p>
               

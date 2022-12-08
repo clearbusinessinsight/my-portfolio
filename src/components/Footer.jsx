@@ -5,7 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const Footer = () => {
- const links = [
+  const links = [
         {
             id: 1,
             child: (
@@ -14,7 +14,7 @@ const Footer = () => {
                 </>
             ),
             href: 'https://linkedin.com',
-            style: 'rounded-tr-md'
+            style: 'rounded-lg p-2',
         },
         {
             id: 2,
@@ -24,7 +24,7 @@ const Footer = () => {
                 </>
             ),
             href: 'https://github.com/clearbusinessinsight',
-            
+            style: 'rounded-lg p-2',
         },
         {
             id: 3,
@@ -34,6 +34,7 @@ const Footer = () => {
                 </>
             ),
             href: 'mailto:choltz@cacbydesign.com',
+            style: 'rounded-lg p-2',
         },
         {
             id: 4,
@@ -43,33 +44,37 @@ const Footer = () => {
                 </>
             ),
             href: '/Countertop-Planner.docx',
-            style: 'rounded-br-md',
+            style: 'rounded-lg p-2',
             download: true,
         },
-    ];
+      ]
+  
+    
 
   return (
-    <footer>
-      <Container>
-        <Col>
-          {links.map(({ id, child, href, style, download }) => (
-                    <button key={id}>
+
+  <footer>
+
+        <Col className='h-30 flex justify-center text-align-center'>
+        {links.map(({ id, child, href, style, download }) => (
+                    <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md divide-purple-300 bg-gray-500" + " " + style}>
                         <a href={href}
-                            className="flex justify-between items-center w-full"
+                            className="flex justify-between items-center w-full text-white"
                             download={download}
                             target="_blank"
                             >
                                 {child}
                         </a>
-                    </button>
+                    </li>
                 ))}
-          <Col>
-         
-            Copyright &copy; CLEAR Business Insight
-          </Col>
+          
         </Col>
 
-      </Container>
+
+
+     <div className='h-30 flex justify-center text-align-center p-4'>
+            Copyright &copy; CLEAR Business Insight
+    </div>    
       
     </footer>
   )

@@ -12,13 +12,16 @@ import Footer from "./components/Footer"
 import socialLinks from './components/SocialLinks'
 
 function App() {
-  
+
+
+    
   return (
     <>
-      <Header />
-      <main>
-        <Container className="container">
-          <Routes>
+      <div className='bg-gradient-to-b from-black to-gray-800 md:h-screen text-white'>
+
+        <Header />
+          <main>
+        <Routes>
             <Route path="./sociallinks" element={<socialLinks />} />
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
@@ -27,9 +30,12 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
-        </Container>
+       
+                  
       </main>
+      
       <Footer />
+    </div>
     </>
   )
 }
