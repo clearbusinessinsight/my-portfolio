@@ -7,9 +7,10 @@ body {
 .container {
     margin: 1rem;
     text-align: center;
+    
 }
 .nav {
-    background-color: #333;
+    background-color: rgb(97, 53, 97);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -45,11 +46,35 @@ body {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 80vh;
+    display: flex;
+    color: #555;
+    background-color: rgb(97, 53, 97);
+    
     
 }
 
 footer {
     color: red;
+    background-color: rgb(97, 53, 97);
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    font-display: inherit;
+    vertical-align: middle;
+
 }
 
+text {
+    color: white;
+}
+
+h1 {
+    color: white;
+        font-family: 'Courier New', Courier, monospace;
+    font: 300;
+    
+}
+.hero {
+    border-radius: 10%;
+}

@@ -1,13 +1,18 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+
 
 export default function Navbar() {
-const path = window.location.pathname
+
     return (
         <nav className="nav">
-            <img src='/logo192.png'></img>
+            {/* <img src='/logo192.png'></img> */}
             <Link to="/" className="site-title">Chris Holtz Portfolio</Link>
             <ul>
                 <CustomLink to="/projects">Projects</CustomLink>
+                <CustomLink to="/skills">Skills</CustomLink>
+                <CustomLink to="/testimonials">Testimonials</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
                 <CustomLink to="/about">About Me</CustomLink>
             </ul>

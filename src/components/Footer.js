@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col className='text-center py3'>
+          <Col className="text-center max-w-screen mx-auto flex flex-col item-center justify-center px-4 h-20 w-full">
             Copyright &copy; CLEAR Business Insight
 
           </Col>
