@@ -4,10 +4,9 @@
 body {
     margin: 0;
 }
-.container {
-    margin: 1rem;
-    text-align: center;
-    
+
+:root {
+    height: 100%;
 }
 .nav {
     background-color: rgb(97, 53, 97);
@@ -46,23 +45,22 @@ body {
 }
 
 main {
-    min-height: 80vh;
+    height: 100%;
     display: flex;
     color: #555;
     background-color: rgb(97, 53, 97);
-    
+    text-align: center;
+    align-items: center;
     
 }
 
 footer {
     color: red;
     background-color: rgb(97, 53, 97);
-    height: 100px;
+    min-height: 4rem;
     text-align: center;
     align-items: center;
-    font-display: inherit;
-    vertical-align: middle;
-
+    padding-top: 15px;
 }
 
 text {
@@ -75,6 +73,48 @@ h1 {
     font: 300;
     
 }
-.hero {
-    border-radius: 10%;
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.contact {
+    color: red;
+    padding: 50px;
+    display: flex;
+}
+
+.name {
+   color: black;
+    padding: 10px; 
+    margin: 12px;
+}
+
+.email {
+    color: black;
+    padding: 10px; 
+    margin: 12px;
+}
+
+.message {
+    color: black;
+    padding: 10px; 
+    margin: 12px;
+}
+.contactme {
+    padding: 10px;
+    border-radius: 10px;  
+
+}
+.icons {
+    padding: 50px;
+    display: flexbox;
+    columns: 3;
+    size-adjust: auto;
+       
+}
+.expheader {
+    color: white;
+    font-size: 25px;
 }

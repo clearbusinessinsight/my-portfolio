@@ -9,6 +9,7 @@ import Testimonials from './pages/Testimonials'
 import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import socialLinks from './components/SocialLinks'
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
       <Header />
       <main>
         <Container className="container">
-        <Routes>
+          <Routes>
+            <Route path="./sociallinks" element={<socialLinks />} />
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />

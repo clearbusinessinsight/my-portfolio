@@ -1,11 +1,10 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import React from "react"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from "react-icons/bs"
 
-const Footer = () => {
- const links = [
+const socialLinks = () => {
+    const links = [
         {
             id: 1,
             child: (
@@ -48,31 +47,24 @@ const Footer = () => {
         },
     ];
 
-  return (
-    <footer>
-      <Container>
-        <Col>
-          {links.map(({ id, child, href, style, download }) => (
-                    <button key={id}>
+    return (
+    <div>
+            <ul>
+                {links.map(({ id, child, href, style, download }) => (
+                    <li key={id}>
                         <a href={href}
-                            className="flex justify-between items-center w-full"
+                            className="flex justify-between items-center w-full text-white"
                             download={download}
                             target="_blank"
                             >
                                 {child}
                         </a>
-                    </button>
+                    </li>
                 ))}
-          <Col>
-         
-            Copyright &copy; CLEAR Business Insight
-          </Col>
-        </Col>
+            </ul>
+        </div>
+    ); 
+};
+    
 
-      </Container>
-      
-    </footer>
-  )
-}
-
-export default Footer
+export default socialLinks;

@@ -10,9 +10,8 @@ export default function Navbar() {
             {/* <img src='/logo192.png'></img> */}
             <Link to="/" className="site-title">Chris Holtz Portfolio</Link>
             <ul>
-                <CustomLink to="/projects">Projects</CustomLink>
+                <CustomLink to="/projects">Portfolio</CustomLink>
                 <CustomLink to="/skills">Skills</CustomLink>
-                <CustomLink to="/testimonials">Testimonials</CustomLink>
                 <CustomLink to="/contact">Contact</CustomLink>
                 <CustomLink to="/about">About Me</CustomLink>
             </ul>

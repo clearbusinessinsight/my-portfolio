@@ -1,38 +1,127 @@
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skills } from "../data";
+import html from '../assets/html.png'
+import css from '../assets/css.png'
+import javascript from '../assets/javascript.png'
+import nextjs from '../assets/nextjs.png'
+import react from '../assets/react.png'
+import tailwind from '../assets/tailwind.png'
+import node from '../assets/node.png'
+import github from '../assets/github.png'
+import mongodb from '../assets/mongodb.png'
+import VB from '../assets/VB.png'
+import insomnia from '../assets/insomnia.png'
+import regex from '../assets/regex.jpg'
+import sql from '../assets/sql.png'
+import express from '../assets/express.png'
+import server from '../assets/server.jpg'
 
 export default function Skills() {
+
+ const techs = [
+        {
+            id: 1,
+            src: html,
+            title: "HTML",
+            style: "shadow-orange-500"
+        },
+         {
+            id: 2,
+            src: css,
+            title: "CSS",
+            style: "shadow-blue-500"
+        },
+          {
+            id: 3,
+            src: javascript,
+            title: "Javascript",
+            style: "shadow-yellow-500"
+        },
+           {
+            id: 4,
+            src: react,
+            title: "React",
+            style: "shadow-blue-600"
+        },
+            {
+            id: 5,
+            src: tailwind,
+            title: "Tailwind",
+            style: "shadow-sky-400"
+        },
+             {
+            id: 6,
+            src: nextjs,
+            title: "Next JS",
+            style: "shadow-white"
+        },
+         {
+            id: 7,
+            src: node,
+            title: "Node",
+            style: "shadow-green-200"
+        },
+         {
+            id: 8,
+            src: github,
+            title: "GitHub",
+            style: "shadow-gray-400"
+        },
+         {
+            id: 9,
+            src: mongodb,
+            title: "MongoDB",
+            style: "shadow-green-400"
+        },
+        
+         {
+            id: 11,
+            src: insomnia,
+            title: "Insomnia",
+            style: "shadow-purple-100"
+        },
+        
+         {
+            id: 13,
+            src: sql,
+            title: "SQL",
+            style: "shadow-gray-400"
+        },
+         {
+            id: 14,
+            src: express,
+            title: "Express JS",
+            style: "shadow-yellow-400"
+        },
+         {
+            id: 15,
+            src: server,
+            title: "Server API",
+            style: "shadow-blue-400"
+        },
+    ]
   return (
-    <a>
-      Skills
-    </a>
-  //   <section id="skills">
-  //     <div className="container px-5 py-10 mx-auto">
-  //       <div className="text-center mb-20">
-  //         <ChipIcon className="w-10 inline-block mb-4" />
-  //         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-  //           Skills &amp; Technologies
-  //         </h1>
-  //         <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-  //           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-  //           ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-  //           possimus est.
-  //         </p>
-  //       </div>
-  //       <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-  //         {skills.map((skill) => (
-  //           <div key={skill} className="p-2 sm:w-1/2 w-full">
-  //             <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-  //               <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-  //               <span className="title-font font-medium text-white">
-  //                 {skill}
-  //               </span>
-  //             </div>
-  //           </div>
-  //         ))}
-  //       </div>
-  //     </div>
-  //   </section>
-  );
+  <div name='experience' className="bg-gradient-to-b from-gray-800 to-black w-full h-screen">
+          <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+              <div>
+                  <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline"></p>
+                  <p className="py-6">These are the programming technical skills that I posses</p>
+              </div>
+              <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+                  {
+                      techs.map(({ id, src, title, style }) => (
+                          <div
+                              key={id}
+                              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+                        >
+                      <img src={src} alt="" className="w-20 mx-auto"/>
+                              <p className="mt-4">{title}</p>
+                  </div>
+                         
+                     ))}
+              </div>
+
+          </div>
+          
+    </div>
+  )
 }
