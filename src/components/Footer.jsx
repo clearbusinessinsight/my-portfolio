@@ -13,7 +13,7 @@ const Footer = () => {
                     Linkedin <FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://linkedin.com',
+            href: 'https://www.linkedin.com/in/chris-holtz-7154ba33/',
             style: 'rounded-lg p-2',
         },
         {
