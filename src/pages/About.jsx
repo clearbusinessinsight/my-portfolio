@@ -1,4 +1,5 @@
 import React from "react";
+import heroicon from "../assets/heroicon.jpg";
 
 export default function About() {
   return (
@@ -26,7 +27,7 @@ export default function About() {
     </div>
        
         <div>
-          <img src="heroicon.jpg" style={{ width: 400, height: 400, borderRadius: 100/2 }}
+          <img src={heroicon} style={{ width: 400, height: 400, borderRadius: 100 / 2 }}
           />
           </div>
       </div>
