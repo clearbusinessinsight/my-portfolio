@@ -43,7 +43,7 @@ const Footer = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/Countertop-Planner.docx',
+            href: '/Countertop-Planner.pdf',
             style: 'rounded-lg p-2',
             download: true,
         },
