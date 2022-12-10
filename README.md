@@ -22,7 +22,7 @@ The app was developed using React and a sense of purpose.
 The application files can be access at https://github.com/clearbusinessinsight/my-portfolio
 
 The application was deployed on GitHub.  Click on this link to view my-portfolio.
- https://clearbusinessinsight.github.io/my-portfolio/
+https://clearbusinessinsight.github.io/my-portfolio/
 
 ## User Story
 
